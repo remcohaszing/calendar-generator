@@ -1,0 +1,8 @@
+# LibreOffice backup files
+.~lock.*
+
+# Python cache files
+__pycache__/
+
+# Generated calendars
+calendar-*.odt
