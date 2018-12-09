@@ -1,0 +1,10 @@
+[scripts]
+generate = "./generate.py"
+
+[requires]
+python_version = "3.6"
+
+[packages]
+python-dateutil = "~=2.4.2"
+relatorio = "~=0.6.2"
+PyYAML = "~=3.11.0"

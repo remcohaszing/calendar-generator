@@ -18,13 +18,11 @@ How
        ~$ git clone https://github.com/remcohaszing/calendar-generator.git
        ~$ cd calendar-generator
 
-#. Create a Python3 virtual environment and install the dependencies
+#. Use Pipenv to create a Python3 virtual environment and install the dependencies
 
    .. code-block:: sh
 
-       ~/calendar-generator$ virtualenv venv -p python3
-       ~/calendar-generator$ source venv/bin/activate
-       (venv)~/calendar-generator$ pip install -r requirements.txt
+       ~/calendar-generator$ pipenv sync
 
 #. Create a YAML configuration file.
 
@@ -51,7 +49,7 @@ How
 
    .. code-block:: sh
 
-       (venv)~/calendar-generator$ ./generate.py config.yaml
+       ~/calendar-generator$ pipenv run generate config.yaml
 
 
 ************
@@ -64,6 +62,3 @@ Contributions can be made in the following form:
 * Pull request fixing a bug.
 * Adding additional holidays.
 * Add support for multiple locales and more specific dates.
-
-
-.. _saint nicholas' eve:: https://en.wikipedia.org/wiki/Sinterklaas
