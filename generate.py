@@ -317,7 +317,7 @@ def generate(template_path, data_file, out_file=None, year=None):
 
     """
     with open(data_file) as f:
-        calendar_data = yaml.load(f)
+        calendar_data = yaml.load(f, yaml.Loader)
     try:
         year = year or calendar_data['year']
         birthdays = calendar_data['birthdays']
