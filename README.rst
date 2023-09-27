@@ -26,7 +26,7 @@ How
 
 #. Create a YAML configuration file.
 
-   .. code-block:: sh
+   .. code-block:: yaml
 
        year: 2016
 
